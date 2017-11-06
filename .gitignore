@@ -17,3 +17,5 @@ jspm_packages
 .history
 
 # End of https://www.gitignore.io/api/visualstudiocode
+
+handler.js
