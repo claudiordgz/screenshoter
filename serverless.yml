@@ -1,0 +1,17 @@
+service: screenshoter
+
+package:
+  individually: true
+  exclude:
+    - ./**
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  saveWebsiteScreenshot:
+    handler: handler.saveWebsiteScreenshot
+    package:
+      include:
+        - handler.js

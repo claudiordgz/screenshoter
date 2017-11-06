@@ -1,0 +1,25 @@
+{
+  "name": "screenshoter",
+  "version": "0.0.1",
+  "description": "Takes a screenshot of a website, save it to cloudinary",
+  "main": "handler.js",
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "typescript"
+  ],
+  "author": "claudiordgz <claudio.rdgz@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless-webpack": "^4.0.0",
+    "ts-loader": "^3.1.1",
+    "typescript": "^2.6.1",
+    "typescript-standard": "^0.3.30",
+    "webpack": "^3.8.1"
+  }
+}
