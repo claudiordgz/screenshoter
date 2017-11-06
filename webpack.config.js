@@ -12,7 +12,7 @@ let configuration = {
     loaders: [
       { 
         test: /\.ts(x?)$/, 
-        loader: 'ts-loader',
+        loader: 'tslint-loader',
         exclude: /node_modules/
       }
     ]
