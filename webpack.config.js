@@ -1,4 +1,5 @@
 const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 let configuration = {
   entry: path.join(__dirname, 'src/handler.ts'),
@@ -26,6 +27,9 @@ let configuration = {
   resolve: {
     extensions: ['.ts', '.js', '.tsx', '.jsx']
   },
+  plugins: [
+    new UglifyJsPlugin()
+  ],
 }
 
 module.exports = configuration

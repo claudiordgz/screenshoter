@@ -12,6 +12,8 @@ provider:
 functions:
   saveWebsiteScreenshot:
     handler: handler.saveWebsiteScreenshot
+    memorySize: 128
+    timeout: 30
     package:
       include:
         - handler.js

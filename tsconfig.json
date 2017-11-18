@@ -1,7 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs"
+    "target": "es2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": false
   },
   "exclude": [
     "node_modules"

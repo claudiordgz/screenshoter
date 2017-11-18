@@ -1,11 +1,15 @@
-function getWebsite (websiteName: string) {
-  console.log(websiteName)
+import { getKeys } from './kms'
+
+
+async function getWebsite (websiteName: string) {
+  const keys = await getKeys()
 }
 
 export function saveWebsiteScreenshot (event: any, context, callback) {
-  if (!event.hasOwnProperty("site") || event.site) {
+  if (!event.hasOwnProperty('site') || event.site) {
     getWebsite(event.site)
   }
+  getWebsite(event.site)
   const response = {
     statusCode: 200,
     body: JSON.stringify({
